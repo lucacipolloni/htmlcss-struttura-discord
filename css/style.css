@@ -38,6 +38,13 @@ body {
   display: flex;
 }
 
+.col-60 {
+  width: 60%;
+}
+
+.col-40 {
+  width: 40%;
+}
 /* # HEADER */
 
 .header-top .row * {
@@ -71,6 +78,37 @@ body {
 
 .header-bottom .hero {
   background-color: #ef82ed;
-  min-height: 380px;
+  min-height: 300px;
+  border: 2px dashed black;
+}
+
+/* # MAIN */
+
+.page-content > section {
+  padding: 50px 0;
+}
+.page-content > section:nth-child(odd) {
+  background-color: white;
+}
+.page-content > section:nth-child(even) {
+  background-color: #d3d3d3;
+}
+
+.page-content > section:nth-child(even) .row {
+  flex-direction: row-reverse;
+}
+.page-content .col-40 {
+  min-height: 400px;
+  background-color: #ffc0ca;
+  border: 2px dashed black;
+}
+.page-content .col-60 {
+  min-height: 400px;
+  background-color: #1e90ff;
+  border: 2px dashed black;
+}
+.page-content .large-content {
+  background-color: #218b21;
+  min-height: 700px;
   border: 2px dashed black;
 }
